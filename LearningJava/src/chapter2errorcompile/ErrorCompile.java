@@ -1,4 +1,4 @@
-package Example1ErrorCompile;
+package chapter2errorcompile;
 
 public class ErrorCompile {
 
@@ -6,5 +6,4 @@ public class ErrorCompile {
 		// TODO Auto-generated method stub
 		System.out.println("Falta ponto e vérgula");
 	}
-
 }
