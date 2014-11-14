@@ -6,15 +6,10 @@ public class ShowFibonacciAtoB {
 		// TODO Auto-generated method stub
 		int x = 0, y = 1;
 
-		for (int i = 0; i <= 15; i++) {
-			if (i > 1) {
-				int z = x + y;
-				x = y;
-				y = z;
-				System.out.println(z);
-			} else {
-				System.out.println(i);
-			}
+		while (y <= 100) {
+			System.out.println(y);
+			y = x+y;
+			x = y-x;
 		}
 	}
 }
