@@ -4,12 +4,18 @@ public class Program {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Account newAccount;
-		newAccount = new Account();
-		newAccount.client = "Rafael Antonio Lucio";
-		newAccount.value = 1000.0;
+		Account newAccount = new Account();
+		Client newClient = new Client();
+		newAccount.clientAccount = newClient;
 		
-		System.out.println("Saldo atual: " + newAccount.value);
+		newClient.name = "Rafael";
+		newClient.lastName = "Antonio Lucio";
+		newAccount.balanceAccount = 1000.0;
+		
+		newAccount.withdraw(200);
+		newAccount.deposit(500);
+		
+		System.out.println("Saldo atual: " + newAccount.balanceAccount);
 	}
 
 }
