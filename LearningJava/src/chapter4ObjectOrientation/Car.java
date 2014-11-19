@@ -1,12 +1,15 @@
 package chapter4ObjectOrientation;
 
 public class Car {
-	String color;
-	String model;
-	double maxSpeed;
-	double actualSpeed;
+	public String color;
+	public String model;
+	public double maxSpeed;
+	public double actualSpeed;
+	public boolean started;
 	
-	void start() {
+	public boolean start() {
 		System.out.println("Car has started");
+		this.started = true;
+		return this.started;
 	}
 }
