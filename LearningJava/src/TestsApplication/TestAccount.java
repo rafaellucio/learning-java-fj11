@@ -1,3 +1,4 @@
+package TestsApplication;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import chapter4ObjectOrientation.Account;
